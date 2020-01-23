@@ -1,0 +1,5 @@
+module_shopping_cart_info_shipping_title = Do you want to display an information on the shipping ?
+module_shopping_cart_info_shipping_description = Display an information on the shipping
+
+module_shopping_cart_info_shipping_international = We sent at international
+module_shopping_cart_info_free_shipping = We offer shipping costs from {{free_shipping_amount}}

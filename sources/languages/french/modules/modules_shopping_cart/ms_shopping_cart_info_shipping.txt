@@ -1,0 +1,5 @@
+module_shopping_cart_info_shipping_title = Souhaitez-vous afficher des informations sur les expéditions ?
+module_shopping_cart_info_shipping_description = Afficher des informations sur les expéditions
+
+module_shopping_cart_info_shipping_international = Nous envoyons à l'international
+module_shopping_cart_info_free_shipping = Nous offrons les frais d'expédition à partir de {{free_shipping_amount}}
