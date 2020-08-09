@@ -38,7 +38,7 @@
       $CLICSHOPPING_Template = Registry::get('Template');
       $CLICSHOPPING_Currencies = Registry::get('Currencies');
 
-      if (isset($_GET['Cart'])  && $CLICSHOPPING_ShoppingCart->getCountContents() > 0) {
+      if (isset($_GET['Cart']) && $CLICSHOPPING_ShoppingCart->getCountContents() > 0) {
         $content_width = (int)MODULE_SHOPPING_CART_INFO_SHIPPING_CONTENT_WIDTH;
         $position = MODULE_SHOPPING_CART_INFO_SHIPPING_POSITION;
 
@@ -152,7 +152,7 @@
     }
     
     public function keys() {
-      return array (
+      return array(
         'MODULE_SHOPPING_CART_INFO_SHIPPING_STATUS',
         'MODULE_SHOPPING_CART_INFO_SHIPPING_FREE_SHIPPING',
         'MODULE_SHOPPING_CART_INFO_SHIPPING_INTERNATIONAL',
