@@ -15,10 +15,10 @@
   class ms_shopping_cart_info_shipping {
     public $code;
     public $group;
-    public $title;
-    public $description;
-    public $sort_order;
-    public $enabled = false;
+    public string $title;
+    public string $description;
+    public ?int $sort_order = 0;
+    public bool $enabled = false;
 
     public function __construct() {
       $this->code = get_class($this);
@@ -50,7 +50,7 @@
           $free_shipping = ClicShopping::getDef('module_shopping_cart_info_free_shipping', ['free_shipping_amount' => $CLICSHOPPING_Currencies->displayPrice(MODULE_SHOPPING_CART_INFO_SHIPPING_FREE_SHIPPING, null)]);
         }
 
-        $shopping_cart_information_customers = '  <!-- start ms_shopping_cart_out_of_message -->'. "\n";
+        $shopping_cart_information_customers = '  <!-- start ms_shopping_cart_out_of_message -->' . "\n";
 
         ob_start();
         require_once($CLICSHOPPING_Template->getTemplateModules($this->group . '/content/shopping_cart_info_shipping'));
