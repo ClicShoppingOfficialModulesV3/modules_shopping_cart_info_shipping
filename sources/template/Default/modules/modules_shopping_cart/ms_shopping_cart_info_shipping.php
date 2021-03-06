@@ -27,7 +27,7 @@
       $this->title = CLICSHOPPING::getDef('module_shopping_cart_info_shipping_title');
       $this->description = CLICSHOPPING::getDef('module_shopping_cart_info_shipping_description');
 
-      if (defined('MODULE_SHOPPING_CART_INFO_SHIPPING_STATUS')) {
+      if (\defined('MODULE_SHOPPING_CART_INFO_SHIPPING_STATUS')) {
         $this->sort_order = MODULE_SHOPPING_CART_INFO_SHIPPING_SORT_ORDER;
         $this->enabled = (MODULE_SHOPPING_CART_INFO_SHIPPING_STATUS == 'True');
       }
@@ -68,7 +68,7 @@
     }
 
     public function check() {
-      return defined('MODULE_SHOPPING_CART_INFO_SHIPPING_STATUS');
+      return \defined('MODULE_SHOPPING_CART_INFO_SHIPPING_STATUS');
     }
 
     public function install() {
