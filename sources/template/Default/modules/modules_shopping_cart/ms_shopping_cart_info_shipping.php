@@ -14,7 +14,7 @@
 
   class ms_shopping_cart_info_shipping {
     public string $code;
-    public $group;
+    public string $group;
     public $title;
     public $description;
     public ?int $sort_order = 0;
